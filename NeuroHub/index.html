@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="logo">
+        <a href="index.html">
+            <img src="Neurodivergent.png" alt="NeuroDiversity Hub" class="logo-img">
+            <span class="logo-text">Neurodivergent Youths Community Ability </span>
+        </a>
+    </div>
+    <title>Neurodivergent Youths Community Ability| Home</title>
+    <style>
+        /* Previous CSS remains unchanged until footer */
+
+        /* Enhanced Footer Styles */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 0 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section {
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-section h4::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--secondary);
+        }
+
+        /* Sponsors Section */
+        .sponsors-section {
+            background-color: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .sponsors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            align-items: center;
+            margin-top: 1.5rem;
+        }
+
+        .sponsor-item {
+            text-align: center;
+        }
+
+        .sponsor-logo {
+            height: 60px;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+
+        .sponsor-logo:hover {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        .sponsor-name {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* Credits Section */
+        .credits-section {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .credits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .credit-category h5 {
+            color: var(--accent-light);
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .credits-list {
+            list-style-type: none;
+        }
+
+        .credits-list li {
+            margin-bottom: 0.8rem;
+        }
+
+        .credits-list a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .credits-list a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.6);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .sponsors-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 1.5rem;
+            }
+            
+            .sponsor-logo {
+                height: 50px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .sponsors-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .sponsor-logo {
+                height: 40px;
+            }
+        }
+
+
+
+
+     /* Previous CSS remains the same until footer */
+        
+        /* Enhanced Footer Styles */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 0 1rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .footer-section {
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h4 {
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .footer-section h4::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--secondary);
+        }
+        
+        .sponsors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        
+        .sponsor-logo {
+            height: 40px;
+            width: auto;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+        
+        .sponsor-logo:hover {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+        
+        .credits-list {
+            list-style-type: none;
+        }
+        
+        .credits-list li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+        
+        .credits-list li::before {
+            content: '•';
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+        }
+        
+        .credits-list a {
+            color: var(--accent-light);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .credits-list a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.6);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+            
+            .sponsors {
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .sponsor-logo {
+                height: 35px;
+            }
+        }
+        
+        
+
+        /* Add this to your existing CSS */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 45px;
+        }
+        
+        .logo-img {
+            height: 85px; /* Ideal size for desktop */
+            width: auto;
+            transition: transform 0.7s ease;
+        }
+        
+        .logo-text {
+            font-size: 3.25rem;
+            font-weight: bold;
+            color: rgb(19, 78, 255);
+            text-decoration: none;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .logo-img {
+                height: 35px; /* Slightly smaller for tablets */
+            }
+            .logo-text {
+                font-size: 1.1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo-img {
+                height: 45px; /* Smallest size for mobile */
+            }
+            .logo-text {
+                font-size: 1rem;
+            }
+        }
+    
+        :root {
+            --primary: #5e548e;
+            --secondary: #439a86;
+            --accent: #ff9e7d;
+            --light: #f8f9fa;
+            --dark: #2b2d42;
+            --white: #ffffff;
+            --emergency: #e74c3c;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .logo a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: var(--primary);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-menu li {
+            position: relative;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-menu a:hover, .nav-menu a.active {
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+            background-color: var(--white);
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        /* Resource Cards */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .resource-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .resource-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .resource-content {
+            padding: 1.5rem;
+        }
+        
+        .resource-card h3 {
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary);
+        }
+        
+        .btn-emergency {
+            background-color: var(--emergency);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links h4 {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-menu {
+                flex-direction: column;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">Neurodivergent Hub</a>
+            </div>
+            <div class="tagline">
+                <p>Resources for neurodivergent Youths</p>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="sensory.html">Sensory Tools</a></li>
+                <li><a href="learning.html">Learning Aids</a></li>
+                <li><a href="communication.html">Communication</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="emergency.html">Emergency</a></li>
+                <li><a href="toolkit.html">Toolkit</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <section class="hero">
+            <h1>Welcome to Neurodivergent Hub</h1>
+            <p>Your comprehensive resource for neurodivergent youthS</p>
+            <a href="about.html" class="btn">Learn More About Us</a>
+        </section>
+        
+        <section class="resource-section">
+            <h2>Featured Resources</h2>
+            <div class="resource-grid">
+                <article class="resource-card">
+                    <img src="https://images.unsplash.com/photo-1595475207225-428b62bda831" alt="Sensory tools">
+                    <div class="resource-content">
+                        <h3>Sensory Tools</h3>
+                        <p>Discover tools to help with sensory regulation and comfort</p>
+                        <a href="sensory.html" class="btn">Explore Sensory Tools</a>
+                    </div>
+                </article>
+                
+                <article class="resource-card">
+                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="Learning aids">
+                    <div class="resource-content">
+                        <h3>Learning Aids</h3>
+                        <p>Strategies and tools to support neurodivergent learning</p>
+                        <a href="learning.html" class="btn">Explore Learning Aids</a>
+                    </div>
+                </article>
+                
+                <article class="resource-card">
+                    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2" alt="Communication tools">
+                    <div class="resource-content">
+                        <h3>Communication</h3>
+                        <p>Resources to support various communication needs</p>
+                        <a href="communication.html" class="btn">Explore Communication</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <section class="emergency-cta">
+            <h2>Need Immediate Help?</h2>
+            <p>Access our emergency resources anytime</p>
+            <a href="emergency.html" class="btn btn-emergency">Emergency Resources</a>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">Neurodivergent Hub</div>
+                <p>Providing resources and support for neurodivergent youth since 2023.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="sensory.html">Sensory Tools</a></li>
+                    <li><a href="learning.html">Learning Aids</a></li>
+                    <li><a href="communication.html">Communication</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="emergency.html">Emergency</a></li>
+                    <li><a href="toolkit.html">Toolkit</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="about.html">Our Mission</a></li>
+                    <li><a href="about.html#team">Our Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>Sponsored By</h4>
+            <div class="sponsors">
+                <img src="Neurodivergent.png" alt="Sponsor 1" class="sponsor-logo">
+                <img src="Neurodivergent.png" alt="Sponsor 2" class="sponsor-logo">
+                <img src="images/sponsor3.png" alt="Sponsor 3" class="sponsor-logo">
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">We gratefully acknowledge support from our partners</p>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Credits</h4>
+            <ul class="credits-list">
+                <li>Website by <a href="https://example.com/designer" target="_blank">Design Team</a></li>
+                <li>Content by <a href="https://example.com/writers" target="_blank">Neurodiversity Experts</a></li>
+                <li>Photos by <a href="https://unsplash.com" target="_blank">Unsplash</a></li>
+                <li>Icons by <a href="https://fontawesome.com" target="_blank">Font Awesome</a></li>
+            </ul>
+        </div>
+    </div>
+
+        
+        <div class="copyright">
+            <p>&copy; 2025 Neurodivergent Youths Community Ability Hub. All rights reserved.</p>
+            
+        </div>
+    </footer>
+</body>
+</html>
